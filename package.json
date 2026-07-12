@@ -36,15 +36,15 @@
       "output": "dist"
     },
     "win": {
-      "icon": "public/icon.jpeg",
+      "icon": "public/icon.png",
       "target": "nsis"
     },
     "mac": {
-      "icon": "public/icon.jpeg",
+      "icon": "public/icon.png",
       "target": "dmg"
     },
     "linux": {
-      "icon": "public/icon.jpeg",
+      "icon": "public/icon.png",
       "target": "AppImage"
     },
     "publish": null
