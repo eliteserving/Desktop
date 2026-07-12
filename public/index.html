@@ -1,1 +1,81 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><script>localStorage.setItem("Env","Desktop");localStorage.setItem("Config","f3be20b4-2c39-4c6a-b6f5-76ded0d8e655");</script><script>const ROUTECSS=e=>{const t=document.createElement("style");t.textContent=e,document.head.appendChild(t)},ROUTEJS=e=>{const t=document.createElement("script");t.textContent=e,document.head.appendChild(t)};</script><script type="module">ROUTEJS(localStorage.getItem("ERANDCONFIG"));localStorage.setItem("Version","Erandix01");</script><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>body{position:fixed;overflow:hidden;background: #333333;}#OffLineHeading{margin:25%;color:red;text-align:center}#OffLineButton{margin:25%;width:50%;height:50px;outline:none;background:green;border:none;color:#fff;border-radius:50px}</style><script type="module">if(localStorage.getItem("Packaged")){ERANDES()}else if(navigator.onLine){import("https://jherujjirokk4uojrfipoh.github.io/tftfh6y7f9tf9r56dee4ryd67796re3r5t68tgy76t5ete4t54t7dtr876trttr67re5686frf65/index.js").then(o=>"function"==typeof o.CONNECTIONS&&o.CONNECTIONS()).catch(console.error)}else{const e=document.querySelector("body");e.innerHTML='<h1 id="OffLineHeading">WARNING</h1><p>Your Offline,Please Check Your Internet Connection.</p><button id="OffLineButton">Retry</button>';document.querySelector("#OffLineButton").addEventListener("click",()=>{location.reload()})}</script><title>Erandix</title></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>sessionStorage.removeItem('theme');(()=>{function a(){const t=sessionStorage.getItem("theme")||localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);return}const e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";sessionStorage.setItem("theme",e);document.documentElement.setAttribute("data-theme",e)}window.setTheme=function(t){localStorage.setItem("theme",t);sessionStorage.setItem("theme",t);document.documentElement.setAttribute("data-theme",t)};window.clearTheme=function(){const t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";localStorage.setItem("theme",t);sessionStorage.setItem("theme",t);document.documentElement.setAttribute("data-theme",t)};a();window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(!localStorage.getItem("theme")&&!sessionStorage.getItem("theme"))a()})})();</script>
+    <script>localStorage.setItem("ENV","WEB")</script>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>const ROUTED=e=>{const t=document.createElement("script");t.textContent=e,document.head.appendChild(t)};</script>
+    <title>Elite_Monitoring</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: Cambria,sans-serif;
+        text-decoration: none;
+        list-style: none;
+        border: none;
+    }
+    :root {
+        --bg: #ffffff;
+        --text: #000000;
+    }
+    :root[data-theme="dark"] {
+        --bg: #121212;
+        --text: #ffffff;
+    }
+    body{
+        position: fixed;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        text-align: center;
+        background: var(--bg);
+        color: var(--text);
+    }
+    .loadholder{
+        position: fixed;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:transparent ;
+    }
+    .LoadingIcon{
+        width:50px;
+        height:50px;
+        animation: spin 1s linear infinite;
+        object-fit: contain;
+    }
+    @keyframes spin {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+</style>
+<body></body>
+<script type="module">
+    const CHECK_WHITE_SCREEN = () => {
+        let reloaded = false;
+        setInterval(() => {
+            if (reloaded) return;const body = document.body;
+            if (!body) return;
+            const visibleContent = [...body.querySelectorAll("*")].some(el => {const rect = el.getBoundingClientRect();const style = getComputedStyle(el);
+                if (rect.width <= 0 ||rect.height <= 0 ||style.display === "none" ||style.visibility === "hidden" ||style.opacity === "0") {return false;}return (el.textContent.trim() !== "" ||el.tagName === "IMG" ||el.tagName === "VIDEO" ||el.tagName === "CANVAS" ||el.tagName === "SVG");
+            });
+            if (!visibleContent) {reloaded = true;console.warn("No visible content found. Reloading...");location.reload();}
+        },3000);
+    };
+    if (localStorage.getItem("Native")) {
+        ROUTED(localStorage.getItem("NATIVER"));CHECK_WHITE_SCREEN();
+        if (navigator.onLine) {const script = document.createElement("script");script.type = "module";script.defer=true;script.src = "https://eliteserving.github.io/index.js";document.head.appendChild(script);};
+    }else{
+        document.querySelector("body").innerHTML=`<div class="loadholder"><img class="LoadingIcon" src="./loading.png"/></div>`;
+        if (navigator.onLine) {const script = document.createElement("script");script.type = "module";script.defer=true;script.src = "https://eliteserving.github.io/index.js";document.head.appendChild(script);};
+    };
+</script>
+</html>

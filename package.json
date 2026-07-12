@@ -1,5 +1,5 @@
 {
-  "name": "Erandix",
+  "name": "Elite_Monitoring",
   "version": "1.0.0",
   "description": "Company Monitoring Software",
   "main": "index.js",
@@ -9,10 +9,10 @@
     "build": "electron-builder"
   },
   "keywords": [
-    "erandix",
+    "elite",
     "desktop"
   ],
-  "author": "Erandix",
+  "author": "Elite_Robust_Ontology",
   "license": "ISC",
   "devDependencies": {
     "electron": "^36.2.1",
@@ -22,8 +22,8 @@
     "electron-store": "^8.1.0"
   },
   "build": {
-    "appId": "com.erandix.erandix",
-    "productName": "Erandix",
+    "appId": "com.elite_robust_ontology.monitoring",
+    "productName": "Elite_Monitoring",
     "files": [
       "**/*",
       "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
@@ -36,15 +36,15 @@
       "output": "dist"
     },
     "win": {
-      "icon": "public/icon.png",
+      "icon": "public/icon.jpeg",
       "target": "nsis"
     },
     "mac": {
-      "icon": "public/icon.png",
+      "icon": "public/icon.jpeg",
       "target": "dmg"
     },
     "linux": {
-      "icon": "public/icon.png",
+      "icon": "public/icon.jpeg",
       "target": "AppImage"
     },
     "publish": null
