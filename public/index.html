@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script>sessionStorage.removeItem('theme');(()=>{function a(){const t=sessionStorage.getItem("theme")||localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);return}const e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";sessionStorage.setItem("theme",e);document.documentElement.setAttribute("data-theme",e)}window.setTheme=function(t){localStorage.setItem("theme",t);sessionStorage.setItem("theme",t);document.documentElement.setAttribute("data-theme",t)};window.clearTheme=function(){const t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";localStorage.setItem("theme",t);sessionStorage.setItem("theme",t);document.documentElement.setAttribute("data-theme",t)};a();window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{if(!localStorage.getItem("theme")&&!sessionStorage.getItem("theme"))a()})})();</script>
-    <script>localStorage.setItem("ENV","WEB")</script>
+    <script>localStorage.setItem("ENV","DESKTOP")</script>
     <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>const ROUTED=e=>{const t=document.createElement("script");t.textContent=e,document.head.appendChild(t)};</script>
