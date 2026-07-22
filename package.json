@@ -1,7 +1,7 @@
 {
-  "name": "Elite_Monitoring",
+  "name": "Cinefy",
   "version": "1.0.0",
-  "description": "Company Monitoring Software",
+  "description": "Company Movies Software",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -22,8 +22,8 @@
     "electron-store": "^8.1.0"
   },
   "build": {
-    "appId": "com.elite_robust_ontology.monitoring",
-    "productName": "Elite_Monitoring",
+    "appId": "com.elite_robust_ontology.cinefy",
+    "productName": "Cinefy",
     "files": [
       "**/*",
       "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
