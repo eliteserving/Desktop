@@ -1,7 +1,7 @@
 {
-  "name": "Cinefy",
+  "name": "Elite_Robust_Ontology",
   "version": "1.0.0",
-  "description": "Company Movies Software",
+  "description": "Company Desktop Software",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -22,8 +22,8 @@
     "electron-store": "^8.1.0"
   },
   "build": {
-    "appId": "com.elite_robust_ontology.cinefy",
-    "productName": "Cinefy",
+    "appId": "com.elite_robust_ontology.elite_robust_ontology",
+    "productName": "Elite_Robust_Ontology",
     "files": [
       "**/*",
       "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
